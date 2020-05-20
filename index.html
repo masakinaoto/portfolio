@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 2020</title>
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>	
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>	
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="is-loading">
+  <div id="loading">
+    <div class="spinner-border text-primary" role="status">
+     <span class="sr-only">Loading...</span>
+   </div>
+  </div>
+ </div>
+
+ 
+ <!-- コンテンツ部分 -->
+ <div id="loading__wrapper">
+  <nav class="navbar-expand-lg navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="./index.html">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <!-- <li class="nav-item">
+            <a class="nav-link smooth" href="./index.html">Home</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link smooth" href="./from.html">From</a>
+          </li>
+          
+          <!-- <li class="nav-item">
+            <a class="nav-link smooth" href="#carcon">Carousel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smooth" href="#scrcon">Scrollshow</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smooth" href="#tabcon">Tab</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smooth" href="#licon">Lightbox</a>
+          </li> -->
+        </ul>
+        <!-- <span class="navbar-text">
+          Navbar text with an inline element
+        </span> -->
+      </div>
+  </nav>
+    <header>
+        <div class="jumbotron">
+            <div class="container">
+              <h1 class="text-light">Animations</h1>
+              <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a> -->
+            </div>
+          </div>
+    </header>
+    <div class="maincontents">
+        <div class="container" id="carcon">
+              <h2 class="text-center">Carousel</h2>
+              <div class="slicontents">
+                <div class="slicontents-item"><img class="d-block w-100" src="./img/dolphin-203875_640.jpg" alt="第1スライド"></div>
+                <div class="slicontents-item"><img class="d-block w-100" src="./img/pier-569314_640.jpg" alt="第2スライド"></div>
+                <div class="slicontents-item"><img class="d-block w-100" src="./img/sean-o-KMn4VEeEPR8-unsplash.jpg" alt="第3スライド"></div>
+              </div>
+        </div>
+
+        <div class="container catchcopy" id="scrcon">
+          <div class="scrollreveal-normal p-5">
+            <h2 class="text-center">Scrollshow</h2>
+            <!-- <p class="text-center">textextextextextext</p> -->
+            <img class="d-block w-100" src="./img/dolphin-203875_640.jpg" alt="第1スライド">
+          </div>
+        </div>
+
+        <div class="container catchcopy">
+          <div class="scrollreveal-left p-5">
+            <img class="d-block w-100" src="./img/pier-569314_640.jpg" alt="第2スライド">
+          </div>
+        </div>
+
+        <div class="container catchcopy">
+          <div class="scrollreveal-right p-5">
+            <img class="d-block w-100" src="./img/sean-o-KMn4VEeEPR8-unsplash.jpg" alt="第3スライド">
+          </div>
+        </div>
+      <!--タブの中身-->
+      <div class="container" id="tabcon">
+        <h2 class="text-center">Tab</h2>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a href="#tab1" class="nav-link navbar-default active" data-toggle="tab">Photo01</a>
+          </li>
+          <li class="nav-item">
+            <a href="#tab2" class="nav-link navbar-default" data-toggle="tab">Photo02</a>
+          </li>
+          <li class="nav-item">
+            <a href="#tab3" class="nav-link navbar-default" data-toggle="tab">Photo03</a>
+          </li>
+        </ul>
+  
+        <div class="tab-content">
+          <div id="tab1" class="tab-pane active">
+            <div class="container py-5">
+              <img class="d-block w-100" src="./img/dolphin-203875_640.jpg" alt="第1スライド">
+            </div>
+            <!--Tab1の内容-->
+          </div>
+          <div id="tab2" class="tab-pane">
+            <div class="container py-5">
+              <img class="d-block w-100" src="./img/pier-569314_640.jpg" alt="第2スライド">
+            </div>
+           <!--Tab２の内容-->
+          </div>
+          <div id="tab3" class="tab-pane">
+            <div class="container py-5">
+              <img class="d-block w-100" src="./img/sean-o-KMn4VEeEPR8-unsplash.jpg" alt="第3スライド">
+            </div>
+           <!--Tab２の内容-->
+          </div>
+        </div>
+      </div>
+    
+      <section class="container" id="licon">
+        <h2 class="text-center">Lightbox</h3>
+            <div class="row">
+              <div class="col-4">
+                <a class="example-image-link thumbnail hover" href="./img/dolphin-203875_640.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image w-100" src="./img/dolphin-203875_640.jpg" alt=""/></a>
+              </div>
+              <div class="col-4">
+                  <a class="example-image-link thumbnail hover" href="./img/pier-569314_640.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image w-100" src="./img/pier-569314_640.jpg" alt=""/></a>
+              </div>
+              <div class="col-4">
+                  <a class="example-image-link thumbnail hover" href="./img/sean-o-KMn4VEeEPR8-unsplash.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image w-100" src="./img/sean-o-KMn4VEeEPR8-unsplash.jpg" alt=""/></a>
+              </div>
+            </div>
+        <div>
+          <!-- <a class="example-image-link" href="./img/dolphin-203875_640.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="./img/dolphin-203875_640.jpg" alt=""/></a>
+          <a class="example-image-link" href="./img/pier-569314_640.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="./img/pier-569314_640.jpg" alt="" /></a>
+          <a class="example-image-link" href="./img/sean-o-KMn4VEeEPR8-unsplash.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="./img/sean-o-KMn4VEeEPR8-unsplash.jpg" alt="" /></a> -->
+        </div>
+      </section>
+
+      <p id="pageTop"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Portfolio 2020</p>
+      </div>
+    </footer>
+  
+ </div>
+    <!-- <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/scrollreveal.min.js"></script>
+    <script src="./js/lightbox.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
